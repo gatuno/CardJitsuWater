@@ -64,5 +64,63 @@ nobase_dist_gamedata_DATA = images/backrock_CE.png \
 	images/backwater_0058.png \
 	images/backwater_0059.png \
 	images/backwater_0060.png \
-	images/frente.png
+	images/frente.png \
+	images/bridge.png \
+	images/backbridge_0001.png \
+	images/backbridge_0002.png \
+	images/backbridge_0003.png \
+	images/backbridge_0004.png \
+	images/backbridge_0005.png \
+	images/backbridge_0006.png \
+	images/backbridge_0007.png \
+	images/backbridge_0008.png \
+	images/backbridge_0009.png \
+	images/backbridge_0010.png \
+	images/backbridge_0011.png \
+	images/backbridge_0012.png \
+	images/backbridge_0013.png \
+	images/backbridge_0014.png \
+	images/backbridge_0015.png \
+	images/backbridge_0016.png \
+	images/backbridge_0017.png \
+	images/backbridge_0018.png \
+	images/backbridge_0019.png \
+	images/backbridge_0020.png \
+	images/backbridge_0021.png \
+	images/backbridge_0022.png \
+	images/backbridge_0023.png \
+	images/backbridge_0024.png \
+	images/backbridge_0025.png \
+	images/backbridge_0026.png \
+	images/backbridge_0027.png \
+	images/backbridge_0028.png \
+	images/backbridge_0029.png \
+	images/backbridge_0030.png \
+	images/right_bridge_1.png \
+	images/right_bridge_2.png \
+	images/right_bridge_3.png \
+	images/right_bridge_4.png \
+	images/left_bridge.png \
+	images/fishy_1.png \
+	images/fishy_2.png \
+	images/fishy_3.png \
+	images/fishy_4.png \
+	images/fishy_5.png \
+	images/fishy_6.png \
+	images/fishy_7.png \
+	images/fishy_8.png \
+	images/fishy_9.png \
+	images/fishy_10.png \
+	images/fishy_11.png \
+	images/fishy_12.png \
+	images/fishy_13.png \
+	images/fishy_14.png \
+	images/fishy_15.png \
+	images/fishy_16.png \
+	images/fishy_17.png \
+	images/fishy_18.png \
+	images/fishy_19.png \
+	images/fishy_20.png \
+	images/fishy_21.png \
+	images/fishy_22.png
 

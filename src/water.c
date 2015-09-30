@@ -128,6 +128,72 @@ enum {
 	
 	IMG_FRENTE,
 	
+	IMG_BRIDGE,
+	
+	IMG_BACKBRIDGE_1,
+	IMG_BACKBRIDGE_2,
+	IMG_BACKBRIDGE_3,
+	IMG_BACKBRIDGE_4,
+	IMG_BACKBRIDGE_5,
+	IMG_BACKBRIDGE_6,
+	IMG_BACKBRIDGE_7,
+	IMG_BACKBRIDGE_8,
+	IMG_BACKBRIDGE_9,
+	IMG_BACKBRIDGE_10,
+	IMG_BACKBRIDGE_11,
+	IMG_BACKBRIDGE_12,
+	IMG_BACKBRIDGE_13,
+	IMG_BACKBRIDGE_14,
+	IMG_BACKBRIDGE_15,
+	IMG_BACKBRIDGE_16,
+	IMG_BACKBRIDGE_17,
+	IMG_BACKBRIDGE_18,
+	IMG_BACKBRIDGE_19,
+	IMG_BACKBRIDGE_20,
+	IMG_BACKBRIDGE_21,
+	IMG_BACKBRIDGE_22,
+	IMG_BACKBRIDGE_23,
+	IMG_BACKBRIDGE_24,
+	IMG_BACKBRIDGE_25,
+	IMG_BACKBRIDGE_26,
+	IMG_BACKBRIDGE_27,
+	IMG_BACKBRIDGE_28,
+	IMG_BACKBRIDGE_29,
+	IMG_BACKBRIDGE_30,
+	
+	IMG_RIGHT_BRIDGE_1,
+	IMG_RIGHT_BRIDGE_2,
+	IMG_RIGHT_BRIDGE_3,
+	IMG_RIGHT_BRIDGE_4,
+	
+	IMG_LEFT_BRIDGE,
+	
+	IMG_FISHY_NONE,
+	
+	IMG_FISHY_FIRE_1,
+	IMG_FISHY_FIRE_2,
+	IMG_FISHY_FIRE_3,
+	IMG_FISHY_FIRE_4,
+	IMG_FISHY_FIRE_5,
+	IMG_FISHY_FIRE_6,
+	IMG_FISHY_FIRE_7,
+	
+	IMG_FISHY_WATER_1,
+	IMG_FISHY_WATER_2,
+	IMG_FISHY_WATER_3,
+	IMG_FISHY_WATER_4,
+	IMG_FISHY_WATER_5,
+	IMG_FISHY_WATER_6,
+	IMG_FISHY_WATER_7,
+	
+	IMG_FISHY_ICE_1,
+	IMG_FISHY_ICE_2,
+	IMG_FISHY_ICE_3,
+	IMG_FISHY_ICE_4,
+	IMG_FISHY_ICE_5,
+	IMG_FISHY_ICE_6,
+	IMG_FISHY_ICE_7,
+	
 	NUM_IMAGES
 };
 
@@ -199,6 +265,69 @@ const char *images_names[NUM_IMAGES] = {
 	GAMEDATA_DIR "images/backwater_0060.png",
 	
 	GAMEDATA_DIR "images/frente.png",
+	
+	GAMEDATA_DIR "images/bridge.png",
+	
+	GAMEDATA_DIR "images/backbridge_0001.png",
+	GAMEDATA_DIR "images/backbridge_0002.png",
+	GAMEDATA_DIR "images/backbridge_0003.png",
+	GAMEDATA_DIR "images/backbridge_0004.png",
+	GAMEDATA_DIR "images/backbridge_0005.png",
+	GAMEDATA_DIR "images/backbridge_0006.png",
+	GAMEDATA_DIR "images/backbridge_0007.png",
+	GAMEDATA_DIR "images/backbridge_0008.png",
+	GAMEDATA_DIR "images/backbridge_0009.png",
+	GAMEDATA_DIR "images/backbridge_0010.png",
+	GAMEDATA_DIR "images/backbridge_0011.png",
+	GAMEDATA_DIR "images/backbridge_0012.png",
+	GAMEDATA_DIR "images/backbridge_0013.png",
+	GAMEDATA_DIR "images/backbridge_0014.png",
+	GAMEDATA_DIR "images/backbridge_0015.png",
+	GAMEDATA_DIR "images/backbridge_0016.png",
+	GAMEDATA_DIR "images/backbridge_0017.png",
+	GAMEDATA_DIR "images/backbridge_0018.png",
+	GAMEDATA_DIR "images/backbridge_0019.png",
+	GAMEDATA_DIR "images/backbridge_0020.png",
+	GAMEDATA_DIR "images/backbridge_0021.png",
+	GAMEDATA_DIR "images/backbridge_0022.png",
+	GAMEDATA_DIR "images/backbridge_0023.png",
+	GAMEDATA_DIR "images/backbridge_0024.png",
+	GAMEDATA_DIR "images/backbridge_0025.png",
+	GAMEDATA_DIR "images/backbridge_0026.png",
+	GAMEDATA_DIR "images/backbridge_0027.png",
+	GAMEDATA_DIR "images/backbridge_0028.png",
+	GAMEDATA_DIR "images/backbridge_0029.png",
+	GAMEDATA_DIR "images/backbridge_0030.png",
+	
+	GAMEDATA_DIR "images/right_bridge_1.png",
+	GAMEDATA_DIR "images/right_bridge_2.png",
+	GAMEDATA_DIR "images/right_bridge_3.png",
+	GAMEDATA_DIR "images/right_bridge_4.png",
+	
+	GAMEDATA_DIR "images/left_bridge.png",
+	
+	GAMEDATA_DIR "images/fishy_1.png",
+	GAMEDATA_DIR "images/fishy_2.png",
+	GAMEDATA_DIR "images/fishy_3.png",
+	GAMEDATA_DIR "images/fishy_4.png",
+	GAMEDATA_DIR "images/fishy_5.png",
+	GAMEDATA_DIR "images/fishy_6.png",
+	GAMEDATA_DIR "images/fishy_7.png",
+	GAMEDATA_DIR "images/fishy_8.png",
+	GAMEDATA_DIR "images/fishy_9.png",
+	GAMEDATA_DIR "images/fishy_10.png",
+	GAMEDATA_DIR "images/fishy_11.png",
+	GAMEDATA_DIR "images/fishy_12.png",
+	GAMEDATA_DIR "images/fishy_13.png",
+	GAMEDATA_DIR "images/fishy_14.png",
+	GAMEDATA_DIR "images/fishy_15.png",
+	GAMEDATA_DIR "images/fishy_16.png",
+	GAMEDATA_DIR "images/fishy_17.png",
+	GAMEDATA_DIR "images/fishy_18.png",
+	GAMEDATA_DIR "images/fishy_19.png",
+	GAMEDATA_DIR "images/fishy_20.png",
+	GAMEDATA_DIR "images/fishy_21.png",
+	GAMEDATA_DIR "images/fishy_22.png"
 };
 
 /* TODO: Listar aquí los automátas */
@@ -241,7 +370,7 @@ int game_loop (void) {
 	SDLKey key;
 	Uint32 last_time, now_time;
 	SDL_Rect rect;
-	int g;
+	int g, h;
 	
 	SDL_EventState (SDL_MOUSEMOTION, SDL_IGNORE);
 	
@@ -263,18 +392,70 @@ int game_loop (void) {
 		/* Calcular el frame de las rocas */
 		g = ((background_frame % 8) / 4) * 2 + ((background_frame % 10) / 5);
 		
-		SDL_BlitSurface (images[IMG_BACKROCK_CE + g], NULL, screen, NULL);
+		rect.x = 294;
+		rect.y = 0;
+		rect.w = images[IMG_BACKROCK_CE]->w;
+		rect.h = images[IMG_BACKROCK_CE]->h;
+		
+		SDL_BlitSurface (images[IMG_BACKROCK_CE + g], NULL, screen, &rect);
 		
 		/* Calcular el frame del agua */
 		g = background_frame % 60;
 		
 		SDL_BlitSurface (images[IMG_BACKWATER_1 + g], NULL, screen, NULL);
 		
-		background_frame++;
-		if (background_frame >= BACKGROUND_FRAMES) background_frame = 0;
+		/* Dibujar el bridge */
+		rect.x = rect.y = 0;
+		rect.w = images[IMG_BACKBRIDGE_1]->w;
+		rect.h = images[IMG_BACKBRIDGE_1]->h;
+		
+		g = background_frame % 30;
+		
+		SDL_BlitSurface (images[IMG_BACKBRIDGE_1 + g], NULL, screen, &rect);
+		
+		
+		rect.x = rect.y = 0;
+		rect.w = images[IMG_BRIDGE]->w;
+		rect.h = images[IMG_BRIDGE]->h;
+		
+		SDL_BlitSurface (images[IMG_BRIDGE], NULL, screen, &rect);
+		
+		/* Dibujar los puentes */
+		for (g = 0; g < 7; g++) {
+			rect.x = 319 - (g * 48);
+			rect.y = 17 + (g * 24);
+			rect.w = images[IMG_RIGHT_BRIDGE_1]->w;
+			rect.h = images[IMG_RIGHT_BRIDGE_2]->h;
+			
+			h = (background_frame % 12 / 3);
+			
+			SDL_BlitSurface (images[IMG_RIGHT_BRIDGE_1 + h], NULL, screen, &rect);
+			
+			rect.x = 284 - (g * 48);
+			rect.y = 15 + (g * 24);
+			rect.w = images[IMG_LEFT_BRIDGE]->w;
+			rect.h = images[IMG_LEFT_BRIDGE]->h;
+			
+			SDL_BlitSurface (images[IMG_LEFT_BRIDGE], NULL, screen, &rect);
+			
+			rect.x = 300 - (g * 48);
+			rect.y = -7 + (g * 24);
+			rect.w = images[IMG_FISHY_NONE]->w;
+			rect.h = images[IMG_FISHY_NONE]->h;
+			
+			SDL_BlitSurface (images[IMG_FISHY_NONE], NULL, screen, &rect);
+		}
+		
 		
 		/* Dibujar el frente */
-		SDL_BlitSurface (images[IMG_FRENTE], NULL, screen, NULL);
+		rect.x = 0;
+		rect.y = 190;
+		rect.w = images[IMG_FRENTE]->w;
+		rect.h = images[IMG_FRENTE]->h;
+		SDL_BlitSurface (images[IMG_FRENTE], NULL, screen, &rect);
+		
+		background_frame++;
+		if (background_frame >= BACKGROUND_FRAMES) background_frame = 0;
 		
 		SDL_Flip (screen);
 		
